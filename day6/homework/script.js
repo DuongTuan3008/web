@@ -7,7 +7,7 @@ function getQuote() {
     url: "https://api.quotable.io/random",
     type: "GET",
     success: function (data) {
-        const { content, author } = data;
+        const {content, author} = data;
         $("#quote").html(`"${content}"`);
         $("#author").html("by " + author);
         showText();

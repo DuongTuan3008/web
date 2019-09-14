@@ -8,7 +8,7 @@ function getQuote() {
     type: "GET",
     success: function (data) {
         const { content, author } = data;
-        $("#quote").html(content);
+        $("#quote").html(`"${content}"`);
         $("#author").html("by " + author);
         showText();
         console.log(data);

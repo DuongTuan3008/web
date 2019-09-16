@@ -9,7 +9,7 @@ function getQuote() {
     success: function (data) {
         const {content, author} = data;
         $("#quote").html(`"${content}"`);
-        $("#author").html("by " + author);
+        $("#author").html(`by ${author}`);
         showText();
         console.log(data);
     },

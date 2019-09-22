@@ -17,6 +17,7 @@ function getQuote() {
       $("#quote").html("Some errors happened");
       $("#author").html("Unknown");
       showText();
+      console.log(error)
     }
   });
 }
